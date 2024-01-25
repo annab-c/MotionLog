@@ -20,6 +20,7 @@
 		81C97AF62B607ECA0090405A /* WorkoutDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C97AF52B607ECA0090405A /* WorkoutDetailView.swift */; };
 		81CDD98D2B61AB7600020D23 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81CDD98C2B61AB7600020D23 /* AppDelegate.swift */; };
 		81CDD98F2B61ACDE00020D23 /* Reminder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81CDD98E2B61ACDE00020D23 /* Reminder.swift */; };
+		81CDD9932B62FD9600020D23 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 81CDD9952B62FD9600020D23 /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,8 @@
 		81C97AF52B607ECA0090405A /* WorkoutDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutDetailView.swift; sourceTree = "<group>"; };
 		81CDD98C2B61AB7600020D23 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		81CDD98E2B61ACDE00020D23 /* Reminder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reminder.swift; sourceTree = "<group>"; };
+		81CDD9942B62FD9600020D23 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		81CDD9962B6303A500020D23 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +109,7 @@
 		81C97AC32B6057510090405A /* MotionLog */ = {
 			isa = PBXGroup;
 			children = (
+				81CDD9952B62FD9600020D23 /* Localizable.strings */,
 				81C97AC42B6057510090405A /* MotionLogApp.swift */,
 				81C97AC62B6057510090405A /* ContentView.swift */,
 				81C97AF32B606B790090405A /* WorkoutCreationView.swift */,
@@ -231,6 +235,7 @@
 			knownRegions = (
 				en,
 				Base,
+				de,
 			);
 			mainGroup = 81C97AB82B6057510090405A;
 			productRefGroup = 81C97AC22B6057510090405A /* Products */;
@@ -250,6 +255,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				81C97ACC2B6057520090405A /* Preview Assets.xcassets in Resources */,
+				81CDD9932B62FD9600020D23 /* Localizable.strings in Resources */,
 				81C97AC92B6057520090405A /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -318,12 +324,25 @@
 		};
 /* End PBXTargetDependency section */
 
+/* Begin PBXVariantGroup section */
+		81CDD9952B62FD9600020D23 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				81CDD9942B62FD9600020D23 /* en */,
+				81CDD9962B6303A500020D23 /* de */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
 		81C97AE82B6057520090405A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -387,6 +406,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -449,6 +469,7 @@
 				DEVELOPMENT_TEAM = P28NDTUBVV;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MotionLog/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -478,6 +499,7 @@
 				DEVELOPMENT_TEAM = P28NDTUBVV;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MotionLog/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
